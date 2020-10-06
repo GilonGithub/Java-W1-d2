@@ -9,8 +9,8 @@ public class FindNumberOfYears {
         System.out.print("Enter the number of minutes: ");
         long minutes = input.nextLong();
 
-        long year = minutes/365;
-        long days = minutes % 365;
+        long year = (((minutes/60)/24))/365;
+        long days = (((minutes/60)/24)) % 365;
 
         System.out.println("There are " + year + " year(s) and " + days + " day(s).");
     }
